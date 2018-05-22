@@ -12,7 +12,7 @@ jobs:
   plan:
   - get: moviefun
   - task: migrate-databases
-    file: migrate.yml
+    file: moviefun/ci/migrate.yml
     params:
       CF_API_URL: {{cf-api-url}}
       CF_USERNAME: {{cf-username}}
